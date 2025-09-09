@@ -92,7 +92,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("../image/moon-bg.jpg");
+  background-image: url("../Image/moon-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
