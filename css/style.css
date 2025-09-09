@@ -16,7 +16,10 @@ body {
   font-family: "poppins", sans-serif;
   background-color: var(--bg);
   color: #fff;
-  min-height: 2000px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Navbar */
@@ -192,7 +195,82 @@ body {
 .about h2 span {
   color: var(--primary);
 }
-/* About Section Start */
+/* About Section End */
+
+/* About List Stat */
+.list {
+  padding: 8rem 5% 1.4rem;
+}
+
+.list h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.list h2 span {
+  color: var(--primary);
+}
+
+/* About List End */
+
+/* List Start Start*/
+.list p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-size: 1.6rem;
+}
+
+.list .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  justify-content: center;
+}
+
+.list .row .list-card {
+  text-align: center;
+  padding-bottom: 4rem  ;
+}
+
+.list .row .list-card img {
+  border-radius: 50%;
+  width: 80%;
+}
+
+.list .row .list-card-title {
+  margin: 1rem auto 0.5rem;
+}
+
+/* List Start End */
+
+/* Footer start */
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+footer .socials {
+  padding: 0.5rem ;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .socials a:hover {
+  color: var(--bg);
+}
+
+footer .credit {
+  font-weight: 500;
+  font-size: 1rem;
+}
+/* Footer end */
 
 /* media queris */
 
@@ -244,6 +322,10 @@ body {
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
   }
+
+  .list p {
+    font-size: 1.4rem;
+  }
 }
 
 .about .row {
@@ -268,5 +350,9 @@ body {
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+  }
+
+  .list p {
+    font-size: 1.8rem;
   }
 }
